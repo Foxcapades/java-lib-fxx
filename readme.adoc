@@ -1,0 +1,25 @@
+= fxx
+
+Builder style extensions for JavaFX classes.
+
+[source,java]
+----
+var tab = new Tab("title");
+tab.setStyle("-fx-something: value");
+tab.getStyleClass().addAll("tabby", "some-class");
+tab.setOnClose(myCloseHandler);
+
+myTabPane.getTabs().add(tab);
+----
+
+vs
+
+[source,java]
+----
+myTabPane.add(
+  new Tab("title")
+    .style("-fx-something: value")
+    .styleClasses("tabby", "some-class")
+    .onClose(myCloseHandler)
+);
+----
