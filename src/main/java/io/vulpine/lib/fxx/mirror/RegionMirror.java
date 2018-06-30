@@ -7,8 +7,16 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.Border;
 import javafx.scene.shape.Shape;
 
+import io.vulpine.lib.fxx.trait.HasMaxSize;
+import io.vulpine.lib.fxx.trait.HasMinSize;
+import io.vulpine.lib.fxx.trait.HasPrefSize;
+
 public interface RegionMirror< T extends RegionMirror >
-  extends ParentMirror < T >
+extends
+  ParentMirror < T >,
+  HasMinSize < T >,
+  HasMaxSize < T >,
+  HasPrefSize < T >
 {
   BooleanProperty snapToPixelProperty();
 
@@ -138,157 +146,6 @@ public interface RegionMirror< T extends RegionMirror >
 
   default T bindToHeight(Property < Number > in) {
     in.bind(heightProperty());
-    return (T) this;
-  }
-
-  DoubleProperty minWidthProperty();
-
-  default T minimumWidth(double in) {
-    minWidthProperty().set(in);
-    return (T) this;
-  }
-
-  default T bindMinimumWidth(ObservableValue < ? extends Number > in) {
-    minWidthProperty().bind(in);
-    return (T) this;
-  }
-
-  default T biBindMinimumWidth(Property < Number > in) {
-    minWidthProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  default T bindToMinimumWidth(Property < Number > in) {
-    in.bind(minWidthProperty());
-    return (T) this;
-  }
-
-  DoubleProperty minHeightProperty();
-
-  default T minimumHeight(double in) {
-    minHeightProperty().set(in);
-    return (T) this;
-  }
-
-  default T bindMinimumHeight(ObservableValue < ? extends Number > in) {
-    minHeightProperty().bind(in);
-    return (T) this;
-  }
-
-  default T biBindMinimumHeight(Property < Number > in) {
-    minHeightProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  default T bindToMinimumHeight(Property < Number > in) {
-    in.bind(minHeightProperty());
-    return (T) this;
-  }
-
-  default T minimumSize(double w, double h) {
-    minWidthProperty().set(w);
-    minHeightProperty().set(h);
-    return (T) this;
-  }
-
-  DoubleProperty prefWidthProperty();
-
-  default T preferredWidth(double in) {
-    prefWidthProperty().set(in);
-    return (T) this;
-  }
-
-  default T bindPreferredWidth(ObservableValue < ? extends Number > in) {
-    prefWidthProperty().bind(in);
-    return (T) this;
-  }
-
-  default T biBindPreferredWidth(Property < Number > in) {
-    prefWidthProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  default T bindToPreferredWidth(Property < Number > in) {
-    in.bind(prefWidthProperty());
-    return (T) this;
-  }
-
-  DoubleProperty prefHeightProperty();
-
-  default T preferredHeight(double in) {
-    prefHeightProperty().set(in);
-    return (T) this;
-  }
-
-  default T bindPreferredHeight(ObservableValue < ? extends Number > in) {
-    prefHeightProperty().bind(in);
-    return (T) this;
-  }
-
-  default T biBindPreferredHeight(Property < Number > in) {
-    prefHeightProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  default T bindToPreferredHeight(Property < Number > in) {
-    in.bind(prefHeightProperty());
-    return (T) this;
-  }
-
-  default T preferredSize(double w, double h) {
-    prefWidthProperty().set(w);
-    prefHeightProperty().set(h);
-    return (T) this;
-  }
-
-
-  DoubleProperty maxWidthProperty();
-
-  default T maximumWidth(double in) {
-    maxWidthProperty().set(in);
-    return (T) this;
-  }
-
-  default T bindMaximumWidth(ObservableValue < ? extends Number > in) {
-    maxWidthProperty().bind(in);
-    return (T) this;
-  }
-
-  default T biBindMaximumWidth(Property < Number > in) {
-    maxWidthProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  default T bindToMaximumWidth(Property < Number > in) {
-    in.bind(maxWidthProperty());
-    return (T) this;
-  }
-
-  DoubleProperty maxHeightProperty();
-
-  default T maximumHeight(double in) {
-    maxHeightProperty().set(in);
-    return (T) this;
-  }
-
-  default T bindMaximumHeight(ObservableValue < ? extends Number > in) {
-    maxHeightProperty().bind(in);
-    return (T) this;
-  }
-
-  default T biBindMaximumHeight(Property < Number > in) {
-    maxHeightProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  default T bindToMaximumHeight(Property < Number > in) {
-    in.bind(maxHeightProperty());
-    return (T) this;
-  }
-
-  default T maximumSize(double w, double h) {
-    maxWidthProperty().set(w);
-    maxHeightProperty().set(h);
     return (T) this;
   }
 
