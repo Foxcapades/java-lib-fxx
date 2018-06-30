@@ -1,4 +1,4 @@
-package io.vulpine.lib.fxx.tab;
+package io.vulpine.lib.fxx.control;
 
 import javafx.beans.property.Property;
 import javafx.beans.value.ObservableValue;
