@@ -6,20 +6,20 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.Node;
 
-import io.vulpine.lib.fxx.trait.*;
+import io.vulpine.lib.fxx.internal.trait.*;
 
 public class Tab extends javafx.scene.control.Tab
 implements
-  HasClosable < Tab >,
+  HasClosable< Tab >,
   HasContent< Tab >,
   HasContextMenu < Tab >,
   HasDisable < Tab >,
-  HasGraphic < Tab >,
-  HasId < Tab >,
+  HasGraphic< Tab >,
+  HasId< Tab >,
   HasStyle < Tab >,
   HasStyleClasses < Tab >,
-  HasText < Tab >,
-  HasTooltip < Tab >
+  HasText< Tab >,
+  HasTooltip< Tab >
 {
   public Tab() {
   }
