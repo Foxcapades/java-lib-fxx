@@ -45,11 +45,27 @@ present in JavaFX.
 >|`javafx.scene.control.TabPane`
 <|`io.vulpine.lib.fxx.control.TabPane`
 
-^|v0.0.2
->|`javafx.scene.layout.VBox`
-<|`io.vulpine.lib.fxx.layout.VBox`
+^|v0.0.3
+>|`javafx.scene.layout.AnchorPane`
+<|`io.vulpine.lib.fxx.layout.AnchorPane`
+
+^|v0.0.3
+>|`javafx.scene.layout.GridPane`
+<|`io.vulpine.lib.fxx.layout.GridPane`
 
 ^|v0.0.2
 >|`javafx.scene.layout.HBox`
 <|`io.vulpine.lib.fxx.layout.HBox`
+
+^|v0.0.3
+>|`javafx.scene.layout.Pane`
+<|`io.vulpine.lib.fxx.layout.Pane`
+
+^|v0.0.3
+>|`javafx.scene.layout.Region`
+<|`io.vulpine.lib.fxx.layout.Region`
+
+^|v0.0.2
+>|`javafx.scene.layout.VBox`
+<|`io.vulpine.lib.fxx.layout.VBox`
 |===
