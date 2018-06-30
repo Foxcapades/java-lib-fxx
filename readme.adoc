@@ -23,3 +23,25 @@ myTabPane.add(
     .onClose(myCloseHandler)
 );
 ----
+
+== Features
+
+Until v1 is reached this listing will track what is presently implemented.
+Once v1 is reached this library should mirror all the major control/pane types
+present in JavaFX.
+
+[%header, width="25%", cols=3]
+.Implementation Mapping
+|===
+^|Since
+^|JavaFX
+^| Mirror
+
+^|v0.0.1
+>|`javafx.scene.control.Tab`
+<| `io.vulpine.lib.fxx.control.Tab`
+
+^|v0.0.1
+>|`javafx.scene.control.TabPane`
+<| `io.vulpine.lib.fxx.control.TabPane`
+|===
