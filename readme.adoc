@@ -24,7 +24,7 @@ myTabPane.add(
 );
 ----
 
-== Features
+== Progress
 
 Until v1 is reached this listing will track what is presently implemented.
 Once v1 is reached this library should mirror all the major control/pane types
