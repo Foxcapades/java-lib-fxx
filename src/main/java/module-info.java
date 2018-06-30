@@ -1,5 +1,5 @@
 module io.vulpine.lib.fxx {
   requires javafx.controls;
 
-  exports io.vulpine.lib.fxx.tab;
+  exports io.vulpine.lib.fxx.control;
 }

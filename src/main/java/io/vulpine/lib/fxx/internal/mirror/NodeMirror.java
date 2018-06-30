@@ -1,7 +1,6 @@
 package io.vulpine.lib.fxx.internal.mirror;
 
 import io.vulpine.lib.fxx.internal.trait.*;
-import io.vulpine.lib.fxx.trait.*;
 
 public interface NodeMirror< T extends NodeMirror >
 extends
