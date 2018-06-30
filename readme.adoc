@@ -39,9 +39,17 @@ present in JavaFX.
 
 ^|v0.0.1
 >|`javafx.scene.control.Tab`
-<| `io.vulpine.lib.fxx.control.Tab`
+<|`io.vulpine.lib.fxx.control.Tab`
 
 ^|v0.0.1
 >|`javafx.scene.control.TabPane`
-<| `io.vulpine.lib.fxx.control.TabPane`
+<|`io.vulpine.lib.fxx.control.TabPane`
+
+^|v0.0.2
+>|`javafx.scene.layout.VBox`
+<|`io.vulpine.lib.fxx.layout.VBox`
+
+^|v0.0.2
+>|`javafx.scene.layout.HBox`
+<|`io.vulpine.lib.fxx.layout.HBox`
 |===
