@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'io.vulpine.lib'
-version '0.0.5'
+version '0.0.6'
 ext.moduleName = 'io.vulpine.lib.fxx'
 
 sourceCompatibility = 1.10
