@@ -7,9 +7,9 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.Border;
 import javafx.scene.shape.Shape;
 
-import io.vulpine.lib.fxx.internal.trait.HasMaxSize;
-import io.vulpine.lib.fxx.internal.trait.HasMinSize;
-import io.vulpine.lib.fxx.internal.trait.HasPrefSize;
+import io.vulpine.lib.fxx.internal.trait.layout.HasMaxSize;
+import io.vulpine.lib.fxx.internal.trait.layout.HasMinSize;
+import io.vulpine.lib.fxx.internal.trait.layout.HasPrefSize;
 
 public interface RegionMirror< T extends RegionMirror >
 extends

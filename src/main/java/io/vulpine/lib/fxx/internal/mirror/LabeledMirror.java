@@ -6,21 +6,23 @@ import javafx.geometry.Insets;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.paint.Paint;
 
-import io.vulpine.lib.fxx.internal.trait.*;
+import io.vulpine.lib.fxx.internal.trait.behavior.HasMnemonicParsing;
+import io.vulpine.lib.fxx.internal.trait.display.HasAlignment;
+import io.vulpine.lib.fxx.internal.trait.display.HasGraphic;
 import io.vulpine.lib.fxx.internal.trait.text.*;
 
 public interface LabeledMirror< T extends LabeledMirror >
   extends
   ControlMirror < T >,
   HasText< T >,
-  HasAlignment < T >,
+  HasAlignment< T >,
   HasTextAlignment< T >,
   HasTextOverrun< T >,
-  HasGraphic < T >,
+  HasGraphic< T >,
   HasFont< T >,
   HasUnderline < T >,
   HasLineSpacing < T >,
-  HasMnemonicParsing < T >
+  HasMnemonicParsing< T >
 {
   StringProperty ellipsisStringProperty();
 

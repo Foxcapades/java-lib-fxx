@@ -7,6 +7,9 @@ import javafx.event.EventHandler;
 import javafx.scene.Node;
 
 import io.vulpine.lib.fxx.internal.trait.*;
+import io.vulpine.lib.fxx.internal.trait.behavior.HasClosable;
+import io.vulpine.lib.fxx.internal.trait.behavior.HasDisable;
+import io.vulpine.lib.fxx.internal.trait.display.HasGraphic;
 import io.vulpine.lib.fxx.internal.trait.event.HasOnCloseRequest;
 import io.vulpine.lib.fxx.internal.trait.text.HasText;
 
@@ -15,7 +18,7 @@ implements
   HasClosable< Tab >,
   HasContent< Tab >,
   HasContextMenu < Tab >,
-  HasDisable < Tab >,
+  HasDisable< Tab >,
   HasGraphic< Tab >,
   HasId< Tab >,
   HasStyle < Tab >,

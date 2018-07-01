@@ -1,4 +1,4 @@
-package io.vulpine.lib.fxx.internal.trait;
+package io.vulpine.lib.fxx.internal.trait.layout;
 
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.Property;

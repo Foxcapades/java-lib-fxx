@@ -6,7 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.control.ButtonType;
 
 import io.vulpine.lib.fxx.internal.mirror.PaneMirror;
-import io.vulpine.lib.fxx.internal.trait.HasGraphic;
+import io.vulpine.lib.fxx.internal.trait.display.HasGraphic;
 import io.vulpine.lib.fxx.internal.trait.text.HasContentText;
 import io.vulpine.lib.fxx.internal.trait.text.HasHeaderText;
 

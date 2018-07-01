@@ -13,6 +13,10 @@ import javafx.scene.control.Menu;
 import javafx.scene.input.KeyCombination;
 
 import io.vulpine.lib.fxx.internal.trait.*;
+import io.vulpine.lib.fxx.internal.trait.behavior.HasDisable;
+import io.vulpine.lib.fxx.internal.trait.behavior.HasMnemonicParsing;
+import io.vulpine.lib.fxx.internal.trait.display.HasGraphic;
+import io.vulpine.lib.fxx.internal.trait.display.HasVisible;
 import io.vulpine.lib.fxx.internal.trait.event.HasOnAction;
 import io.vulpine.lib.fxx.internal.trait.text.HasText;
 
@@ -21,11 +25,11 @@ public interface MenuItemMirror< T extends MenuItemMirror >
   HasId < T >,
   HasStyle < T >,
   HasText < T >,
-  HasGraphic < T >,
+  HasGraphic< T >,
   HasOnAction < T >,
-  HasDisable < T >,
-  HasVisible < T >,
-  HasMnemonicParsing < T >,
+  HasDisable< T >,
+  HasVisible< T >,
+  HasMnemonicParsing< T >,
   HasStyleClasses < T >,
   EventTarget,
   Styleable

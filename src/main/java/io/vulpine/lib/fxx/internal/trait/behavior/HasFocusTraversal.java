@@ -1,4 +1,4 @@
-package io.vulpine.lib.fxx.internal.trait;
+package io.vulpine.lib.fxx.internal.trait.behavior;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.Property;

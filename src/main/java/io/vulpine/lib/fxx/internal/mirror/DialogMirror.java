@@ -2,7 +2,6 @@ package io.vulpine.lib.fxx.internal.mirror;
 
 import javafx.beans.property.*;
 import javafx.beans.value.ObservableValue;
-import javafx.event.EventHandler;
 import javafx.event.EventTarget;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.DialogEvent;
@@ -12,11 +11,12 @@ import javafx.stage.StageStyle;
 import javafx.stage.Window;
 import javafx.util.Callback;
 
-import io.vulpine.lib.fxx.internal.trait.HasGraphic;
-import io.vulpine.lib.fxx.internal.trait.HasReadOnlyHeight;
+import io.vulpine.lib.fxx.internal.trait.display.HasGraphic;
+import io.vulpine.lib.fxx.internal.trait.layout.HasReadOnlyHeight;
 import io.vulpine.lib.fxx.internal.trait.HasReadOnlyShowing;
-import io.vulpine.lib.fxx.internal.trait.HasReadOnlyWidth;
+import io.vulpine.lib.fxx.internal.trait.layout.HasReadOnlyWidth;
 import io.vulpine.lib.fxx.internal.trait.event.*;
+import io.vulpine.lib.fxx.internal.trait.layout.HasReadOnlyXY;
 import io.vulpine.lib.fxx.internal.trait.text.HasContentText;
 import io.vulpine.lib.fxx.internal.trait.text.HasHeaderText;
 
@@ -26,14 +26,15 @@ public interface DialogMirror< R, T extends DialogMirror >
   HasContentText < T >,
   HasHeaderText < T >,
   HasGraphic < T >,
-  HasReadOnlyWidth < T >,
-  HasReadOnlyHeight < T >,
+  HasReadOnlyWidth< T >,
+  HasReadOnlyHeight< T >,
   HasOnCloseRequest < DialogEvent, T >,
   HasReadOnlyShowing < T >,
   HasOnShown < DialogEvent, T >,
   HasOnShowing < DialogEvent, T >,
   HasOnHiding < DialogEvent, T >,
-  HasOnHidden < DialogEvent, T >
+  HasOnHidden < DialogEvent, T >,
+  HasReadOnlyXY< T >
 {
   void initModality(Modality modality);
 
@@ -173,24 +174,10 @@ public interface DialogMirror< R, T extends DialogMirror >
     return (T) this;
   }
 
-  ReadOnlyDoubleProperty xProperty();
-
-  default T bindToX(Property < Number > in) {
-    in.bind(xProperty());
-    return (T) this;
-  }
-
   void setY(double y);
 
   default T y(double in) {
     setY(in);
-    return (T) this;
-  }
-
-  ReadOnlyDoubleProperty yProperty();
-
-  default T bindToY(Property < Number > in) {
-    in.bind(yProperty());
     return (T) this;
   }
 }

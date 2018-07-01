@@ -1,9 +1,9 @@
-package io.vulpine.lib.fxx.internal.trait;
+package io.vulpine.lib.fxx.internal.trait.layout;
 
 import javafx.beans.property.Property;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 
-public interface HasReadOnlyWidth < T extends HasReadOnlyWidth >
+public interface HasReadOnlyWidth< T extends HasReadOnlyWidth >
 {
   ReadOnlyDoubleProperty widthProperty();
 

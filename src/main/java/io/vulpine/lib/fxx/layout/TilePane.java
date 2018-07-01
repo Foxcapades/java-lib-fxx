@@ -8,10 +8,10 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 
 import io.vulpine.lib.fxx.internal.mirror.PaneMirror;
-import io.vulpine.lib.fxx.internal.trait.HasAlignment;
-import io.vulpine.lib.fxx.internal.trait.HasHGap;
-import io.vulpine.lib.fxx.internal.trait.HasOrientation;
-import io.vulpine.lib.fxx.internal.trait.HasVGap;
+import io.vulpine.lib.fxx.internal.trait.display.HasAlignment;
+import io.vulpine.lib.fxx.internal.trait.layout.HasHGap;
+import io.vulpine.lib.fxx.internal.trait.display.HasOrientation;
+import io.vulpine.lib.fxx.internal.trait.layout.HasVGap;
 
 public class TilePane extends javafx.scene.layout.TilePane
 implements

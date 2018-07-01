@@ -8,30 +8,10 @@ import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.InputMethodRequests;
 
 public interface HasOnInputMethod< T extends HasOnInputMethod >
+extends HasOnInputMethodTextChanged < T >
 {
-  ObjectProperty < EventHandler < ? super InputMethodEvent > > onInputMethodTextChangedProperty();
-
   ObjectProperty < InputMethodRequests > inputMethodRequestsProperty();
 
-  default T onInputMethodTextChanged(EventHandler < ? super InputMethodEvent > in) {
-    onInputMethodTextChangedProperty().set(in);
-    return (T) this;
-  }
-
-  default T bindOnInputMethodTextChanged(ObservableValue < ? extends EventHandler < ? super InputMethodEvent > > in) {
-    onInputMethodTextChangedProperty().bind(in);
-    return (T) this;
-  }
-
-  default T biBindOnInputMethodTextChanged(Property < EventHandler < ? super InputMethodEvent > > in) {
-    onInputMethodTextChangedProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  default T bindToOnInputMethodTextChanged(Property < EventHandler < ? super InputMethodEvent > > in) {
-    in.bind(onInputMethodTextChangedProperty());
-    return (T) this;
-  }
 
   default T inputMethodRequests(InputMethodRequests in) {
     inputMethodRequestsProperty().set(in);

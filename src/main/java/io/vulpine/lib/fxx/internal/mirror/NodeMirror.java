@@ -1,29 +1,34 @@
 package io.vulpine.lib.fxx.internal.mirror;
 
 import io.vulpine.lib.fxx.internal.trait.*;
+import io.vulpine.lib.fxx.internal.trait.behavior.HasDisable;
+import io.vulpine.lib.fxx.internal.trait.behavior.HasFocusTraversal;
+import io.vulpine.lib.fxx.internal.trait.behavior.HasManaged;
+import io.vulpine.lib.fxx.internal.trait.display.*;
 import io.vulpine.lib.fxx.internal.trait.event.*;
+import io.vulpine.lib.fxx.internal.trait.layout.HasLayout;
 
 public interface NodeMirror< T extends NodeMirror >
 extends
   HasAccessibility < T >,
-  HasBlendMode < T >,
+  HasBlendMode< T >,
   HasCache< T >,
   HasCacheHint < T >,
   HasClip < T >,
-  HasCursor < T >,
+  HasCursor< T >,
   HasDepthTest < T >,
-  HasDisable < T >,
+  HasDisable< T >,
   HasDragEvents< T >,
-  HasEffect < T >,
-  HasFocusTraversal < T >,
+  HasEffect< T >,
+  HasFocusTraversal< T >,
   HasId< T >,
   HasLayout< T >,
-  HasManaged < T >,
+  HasManaged< T >,
   HasMouseDragEvents< T >,
   HasMouseEvents< T >,
-  HasMouseTransparent < T >,
+  HasMouseTransparent< T >,
   HasNodeOrientation < T >,
-  HasOpacity < T >,
+  HasOpacity< T >,
   HasOnContextMenuRequested< T >,
   HasOnInputMethod< T >,
   HasKeyboardEvents< T >,

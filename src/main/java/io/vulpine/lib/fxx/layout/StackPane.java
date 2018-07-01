@@ -5,7 +5,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 
 import io.vulpine.lib.fxx.internal.mirror.PaneMirror;
-import io.vulpine.lib.fxx.internal.trait.HasAlignment;
+import io.vulpine.lib.fxx.internal.trait.display.HasAlignment;
 
 public class StackPane extends javafx.scene.layout.StackPane
 implements

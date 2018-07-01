@@ -11,8 +11,13 @@ import javafx.scene.shape.StrokeLineCap;
 import javafx.scene.shape.StrokeLineJoin;
 import javafx.scene.shape.StrokeType;
 
+import io.vulpine.lib.fxx.internal.trait.display.HasFill;
+
 /** @see javafx.scene.shape.Shape */
-public interface ShapeMirror < T extends ShapeMirror > extends NodeMirror < T >
+public interface ShapeMirror < T extends ShapeMirror >
+extends
+  NodeMirror < T >,
+  HasFill< T >
 {
   /** @see javafx.scene.shape.Shape#strokeTypeProperty() */
   ObjectProperty < StrokeType > strokeTypeProperty();
@@ -194,33 +199,6 @@ public interface ShapeMirror < T extends ShapeMirror > extends NodeMirror < T >
   /** @see javafx.scene.shape.Shape#getStrokeDashArray() */
   default T setStrokDashSegments(Double ...in) {
     getStrokeDashArray().setAll(in);
-    return (T) this;
-  }
-
-  /** @see javafx.scene.shape.Shape#fill */
-  ObjectProperty < Paint > fillProperty();
-
-  /** @see javafx.scene.shape.Shape#fill */
-  default T fill(Paint in) {
-    fillProperty().set(in);
-    return (T) this;
-  }
-
-  /** @see javafx.scene.shape.Shape#fill */
-  default T bindFill(ObservableValue < ? extends Paint > in) {
-    fillProperty().bind(in);
-    return (T) this;
-  }
-
-  /** @see javafx.scene.shape.Shape#fill */
-  default T biBindFill(Property < Paint > in) {
-    fillProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  /** @see javafx.scene.shape.Shape#fill */
-  default T bindToFill(Property < Paint > in) {
-    in.bind(fillProperty());
     return (T) this;
   }
 

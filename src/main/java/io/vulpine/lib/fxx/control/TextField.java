@@ -1,7 +1,7 @@
 package io.vulpine.lib.fxx.control;
 
 import io.vulpine.lib.fxx.internal.mirror.TextInputControlMirror;
-import io.vulpine.lib.fxx.internal.trait.HasAlignment;
+import io.vulpine.lib.fxx.internal.trait.display.HasAlignment;
 import io.vulpine.lib.fxx.internal.trait.event.HasOnAction;
 import io.vulpine.lib.fxx.internal.trait.text.HasPrefColumnCount;
 
