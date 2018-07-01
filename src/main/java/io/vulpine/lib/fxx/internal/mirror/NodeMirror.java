@@ -1,6 +1,7 @@
 package io.vulpine.lib.fxx.internal.mirror;
 
 import io.vulpine.lib.fxx.internal.trait.*;
+import io.vulpine.lib.fxx.internal.trait.event.*;
 
 public interface NodeMirror< T extends NodeMirror >
 extends
@@ -19,12 +20,12 @@ extends
   HasLayout< T >,
   HasManaged < T >,
   HasMouseDragEvents< T >,
-  HasMouseEvents < T >,
+  HasMouseEvents< T >,
   HasMouseTransparent < T >,
   HasNodeOrientation < T >,
   HasOpacity < T >,
-  HasOnContextMenuRequested < T >,
-  HasOnInputMethod < T >,
+  HasOnContextMenuRequested< T >,
+  HasOnInputMethod< T >,
   HasKeyboardEvents< T >,
   HasPickOnBounds < T >,
   HasReadOnlyBoundsInLocal < T >,
