@@ -64,6 +64,8 @@ present in JavaFX.
 ^|v0.0.4 >|`{jfx}.scene.layout.StackPane`   <|`{fxx}.layout.StackPane`
 ^|v0.0.4 >|`{jfx}.scene.layout.TilePane`    <|`{fxx}.layout.TilePane`
 ^|v0.0.2 >|`{jfx}.scene.layout.VBox`        <|`{fxx}.layout.VBox`
+^|v0.0.8 >|`{jfx}.scene.Scene`              <|`{fxx}.scene.Scene`
+^|v0.0.8 >|`{jfx}.scene.SubScene`           <|`{fxx}.scene.SubScene`
 ^|v0.0.5 >|`{jfx}.scene.text.Text`          <|`{fxx}.text.Text`
 ^|v0.0.7 >|`{jfx}.scene.text.TextFlow`      <|`{fxx}.text.TextFlow`
 |===
