@@ -23,6 +23,4 @@ implements PaneMirror < AnchorPane >
     setRightAnchor(in, r);
     return this;
   }
-
-
 }

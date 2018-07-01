@@ -49,6 +49,18 @@ present in JavaFX.
 >|`javafx.scene.layout.AnchorPane`
 <|`io.vulpine.lib.fxx.layout.AnchorPane`
 
+^|v0.0.4
+>|`javafx.scene.layout.BorderPane`
+<|`io.vulpine.lib.fxx.layout.BorderPane`
+
+^|v0.0.4
+>|`javafx.scene.layout.DialogPane`
+<|`io.vulpine.lib.fxx.layout.DialogPane`
+
+^|v0.0.4
+>|`javafx.scene.layout.FlowPane`
+<|`io.vulpine.lib.fxx.layout.FlowPane`
+
 ^|v0.0.3
 >|`javafx.scene.layout.GridPane`
 <|`io.vulpine.lib.fxx.layout.GridPane`
@@ -64,6 +76,14 @@ present in JavaFX.
 ^|v0.0.3
 >|`javafx.scene.layout.Region`
 <|`io.vulpine.lib.fxx.layout.Region`
+
+^|v0.0.4
+>|`javafx.scene.layout.StackPane`
+<|`io.vulpine.lib.fxx.layout.StackPane`
+
+^|v0.0.4
+>|`javafx.scene.layout.TilePane`
+<|`io.vulpine.lib.fxx.layout.TilePane`
 
 ^|v0.0.2
 >|`javafx.scene.layout.VBox`
