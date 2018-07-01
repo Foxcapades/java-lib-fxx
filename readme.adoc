@@ -1,4 +1,6 @@
 = fxx
+:jfx: javafx
+:fxx: io.vulpine.lib.fxx
 
 Builder style extensions for JavaFX classes.
 
@@ -34,26 +36,34 @@ present in JavaFX.
 .Implementation Mapping
 |===
 ^|Since  ^|JavaFX                           ^| Mirror
-^|v0.0.6 >|`javafx.scene.control.Accordion`  <|`io.vulpine.lib.fxx.control.Accordion`
-^|v0.0.6 >|`javafx.scene.control.Button`     <|`io.vulpine.lib.fxx.control.Button`
-^|v0.0.6 >|`javafx.scene.control.CheckBox`   <|`io.vulpine.lib.fxx.control.CheckBox`
-^|v0.0.5 >|`javafx.scene.control.Label`      <|`io.vulpine.lib.fxx.control.Label`
-^|v0.0.6 >|`javafx.scene.control.ScrollPane` <|`io.vulpine.lib.fxx.control.ScrollPane`
-^|v0.0.1 >|`javafx.scene.control.Tab`        <|`io.vulpine.lib.fxx.control.Tab`
-^|v0.0.1 >|`javafx.scene.control.TabPane`    <|`io.vulpine.lib.fxx.control.TabPane`
-^|v0.0.6 >|`javafx.scene.control.TextArea`   <|`io.vulpine.lib.fxx.control.TextArea`
-^|v0.0.6 >|`javafx.scene.control.TextField`  <|`io.vulpine.lib.fxx.control.TextField`
-^|v0.0.6 >|`javafx.scene.control.TitledPane` <|`io.vulpine.lib.fxx.control.TitledPane`
-^|v0.0.3 >|`javafx.scene.layout.AnchorPane`  <|`io.vulpine.lib.fxx.layout.AnchorPane`
-^|v0.0.4 >|`javafx.scene.layout.BorderPane`  <|`io.vulpine.lib.fxx.layout.BorderPane`
-^|v0.0.4 >|`javafx.scene.layout.DialogPane`  <|`io.vulpine.lib.fxx.layout.DialogPane`
-^|v0.0.4 >|`javafx.scene.layout.FlowPane`    <|`io.vulpine.lib.fxx.layout.FlowPane`
-^|v0.0.3 >|`javafx.scene.layout.GridPane`    <|`io.vulpine.lib.fxx.layout.GridPane`
-^|v0.0.2 >|`javafx.scene.layout.HBox`        <|`io.vulpine.lib.fxx.layout.HBox`
-^|v0.0.3 >|`javafx.scene.layout.Pane`        <|`io.vulpine.lib.fxx.layout.Pane`
-^|v0.0.3 >|`javafx.scene.layout.Region`      <|`io.vulpine.lib.fxx.layout.Region`
-^|v0.0.4 >|`javafx.scene.layout.StackPane`   <|`io.vulpine.lib.fxx.layout.StackPane`
-^|v0.0.4 >|`javafx.scene.layout.TilePane`    <|`io.vulpine.lib.fxx.layout.TilePane`
-^|v0.0.2 >|`javafx.scene.layout.VBox`        <|`io.vulpine.lib.fxx.layout.VBox`
-^|v0.0.5 >|`javafx.scene.text.Text`          <| io.vulpine.lib.fxx.text.Text`
+^|v0.0.6 >|`{jfx}.scene.control.Accordion`  <|`{fxx}.control.Accordion`
+^|v0.0.7 >|`{jfx}.scene.control.Alert`      <|`{fxx}.control.Alert`
+^|v0.0.6 >|`{jfx}.scene.control.Button`     <|`{fxx}.control.Button`
+^|v0.0.7 >|`{jfx}.scene.control.ButtonBar`  <|`{fxx}.control.ButtonBar`
+^|v0.0.6 >|`{jfx}.scene.control.CheckBox`   <|`{fxx}.control.CheckBox`
+^|v0.0.7 >|`{jfx}.scene.control.Dialog`     <|`{fxx}.control.Dialog`
+^|v0.0.5 >|`{jfx}.scene.control.Label`      <|`{fxx}.control.Label`
+^|v0.0.7 >|`{jfx}.scene.control.Menu`       <|`{fxx}.menu.Menu`
+^|v0.0.7 >|`{jfx}.scene.control.MenuBar`    <|`{fxx}.menu.MenuBar`
+^|v0.0.7 >|`{jfx}.scene.control.MenuButton` <|`{fxx}.menu.MenuButton`
+^|v0.0.7 >|`{jfx}.scene.control.MenuItem`   <|`{fxx}.menu.MenuItem`
+^|v0.0.6 >|`{jfx}.scene.control.ScrollPane` <|`{fxx}.control.ScrollPane`
+^|v0.0.1 >|`{jfx}.scene.control.Tab`        <|`{fxx}.control.Tab`
+^|v0.0.1 >|`{jfx}.scene.control.TabPane`    <|`{fxx}.control.TabPane`
+^|v0.0.6 >|`{jfx}.scene.control.TextArea`   <|`{fxx}.control.TextArea`
+^|v0.0.6 >|`{jfx}.scene.control.TextField`  <|`{fxx}.control.TextField`
+^|v0.0.6 >|`{jfx}.scene.control.TitledPane` <|`{fxx}.control.TitledPane`
+^|v0.0.3 >|`{jfx}.scene.layout.AnchorPane`  <|`{fxx}.layout.AnchorPane`
+^|v0.0.4 >|`{jfx}.scene.layout.BorderPane`  <|`{fxx}.layout.BorderPane`
+^|v0.0.4 >|`{jfx}.scene.layout.DialogPane`  <|`{fxx}.layout.DialogPane`
+^|v0.0.4 >|`{jfx}.scene.layout.FlowPane`    <|`{fxx}.layout.FlowPane`
+^|v0.0.3 >|`{jfx}.scene.layout.GridPane`    <|`{fxx}.layout.GridPane`
+^|v0.0.2 >|`{jfx}.scene.layout.HBox`        <|`{fxx}.layout.HBox`
+^|v0.0.3 >|`{jfx}.scene.layout.Pane`        <|`{fxx}.layout.Pane`
+^|v0.0.3 >|`{jfx}.scene.layout.Region`      <|`{fxx}.layout.Region`
+^|v0.0.4 >|`{jfx}.scene.layout.StackPane`   <|`{fxx}.layout.StackPane`
+^|v0.0.4 >|`{jfx}.scene.layout.TilePane`    <|`{fxx}.layout.TilePane`
+^|v0.0.2 >|`{jfx}.scene.layout.VBox`        <|`{fxx}.layout.VBox`
+^|v0.0.5 >|`{jfx}.scene.text.Text`          <| {fxx}.text.Text`
+^|v0.0.7 >|`{jfx}.scene.text.TextFlow`      <| {fxx}.text.TextFlow`
 |===

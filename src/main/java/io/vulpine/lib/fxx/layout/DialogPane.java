@@ -7,11 +7,15 @@ import javafx.scene.control.ButtonType;
 
 import io.vulpine.lib.fxx.internal.mirror.PaneMirror;
 import io.vulpine.lib.fxx.internal.trait.HasGraphic;
+import io.vulpine.lib.fxx.internal.trait.text.HasContentText;
+import io.vulpine.lib.fxx.internal.trait.text.HasHeaderText;
 
 public class DialogPane extends javafx.scene.control.DialogPane
 implements
   PaneMirror < DialogPane >,
-  HasGraphic < DialogPane >
+  HasGraphic < DialogPane >,
+  HasContentText < DialogPane >,
+  HasHeaderText < DialogPane >
 {
   public DialogPane() {
   }
@@ -36,26 +40,6 @@ implements
     return this;
   }
 
-  public DialogPane headerText(String in) {
-    headerTextProperty().set(in);
-    return this;
-  }
-
-  public DialogPane bindHeaderText(ObservableValue < ? extends String > in) {
-    headerTextProperty().bind(in);
-    return this;
-  }
-
-  public DialogPane biBindHeaderText(Property < String > in) {
-    headerTextProperty().bindBidirectional(in);
-    return this;
-  }
-
-  public DialogPane bindToHeaderText(Property < String > in) {
-    in.bind(headerTextProperty());
-    return this;
-  }
-
   public DialogPane content(Node in) {
     contentProperty().set(in);
     return this;
@@ -73,26 +57,6 @@ implements
 
   public DialogPane bindToContent(Property < Node > in) {
     in.bind(contentProperty());
-    return this;
-  }
-
-  public DialogPane contentText(String in) {
-    contentTextProperty().set(in);
-    return this;
-  }
-
-  public DialogPane bindContentText(ObservableValue < ? extends String > in) {
-    contentTextProperty().bind(in);
-    return this;
-  }
-
-  public DialogPane biBindContentText(Property < String > in) {
-    contentTextProperty().bindBidirectional(in);
-    return this;
-  }
-
-  public DialogPane bindToContentText(Property < String > in) {
-    in.bind(contentTextProperty());
     return this;
   }
 

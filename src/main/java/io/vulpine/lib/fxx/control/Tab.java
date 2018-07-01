@@ -7,6 +7,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Node;
 
 import io.vulpine.lib.fxx.internal.trait.*;
+import io.vulpine.lib.fxx.internal.trait.event.HasOnCloseRequest;
 import io.vulpine.lib.fxx.internal.trait.text.HasText;
 
 public class Tab extends javafx.scene.control.Tab
@@ -20,7 +21,8 @@ implements
   HasStyle < Tab >,
   HasStyleClasses < Tab >,
   HasText< Tab >,
-  HasTooltip< Tab >
+  HasTooltip< Tab >,
+  HasOnCloseRequest < Event, Tab >
 {
   public Tab() {
   }
@@ -75,26 +77,6 @@ implements
 
   public Tab bindToDisabled(Property < Boolean > in) {
     in.bind(disabledProperty());
-    return this;
-  }
-
-  public Tab onCloseRequest(EventHandler < Event > in) {
-    setOnCloseRequest(in);
-    return this;
-  }
-
-  public Tab bindOnCloseRequest(ObservableValue < EventHandler < Event > > in) {
-    onCloseRequestProperty().bind(in);
-    return this;
-  }
-
-  public Tab biBindOnCloseRequest(Property < EventHandler < Event > > in) {
-    onCloseRequestProperty().bindBidirectional(in);
-    return this;
-  }
-
-  public Tab bindToOnCloseRequest(Property < EventHandler < Event > > in) {
-    in.bind(onCloseRequestProperty());
     return this;
   }
 

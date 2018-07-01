@@ -19,7 +19,8 @@ public interface LabeledMirror< T extends LabeledMirror >
   HasGraphic < T >,
   HasFont< T >,
   HasUnderline < T >,
-  HasLineSpacing < T >
+  HasLineSpacing < T >,
+  HasMnemonicParsing < T >
 {
   StringProperty ellipsisStringProperty();
 
@@ -135,28 +136,6 @@ public interface LabeledMirror< T extends LabeledMirror >
 
   default T bindToTextFill(Property < Paint > in) {
     in.bind(textFillProperty());
-    return (T) this;
-  }
-
-  BooleanProperty mnemonicParsingProperty();
-
-  default T mnemonicParsing(boolean in) {
-    mnemonicParsingProperty().set(in);
-    return (T) this;
-  }
-
-  default T bindMnemonicParsing(ObservableValue < ? extends Boolean > in) {
-    mnemonicParsingProperty().bind(in);
-    return (T) this;
-  }
-
-  default T biBindMnemonicParsing(Property < Boolean > in) {
-    mnemonicParsingProperty().bindBidirectional(in);
-    return (T) this;
-  }
-
-  default T bindToMnemonicParsing(Property < Boolean > in) {
-    in.bind(mnemonicParsingProperty());
     return (T) this;
   }
 }
